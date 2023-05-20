@@ -238,5 +238,12 @@ footer {
     .pengu {
         left: 0;
     }
+    
+    .container2 {
+        background-image: url(./imgs/ok.png);
+        background-position-x: -866px;
+        min-height: 100vh;
+        margin-bottom: 5px;
+    }
 }
 
