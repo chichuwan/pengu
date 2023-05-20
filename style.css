@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap');
+@font-face {
+    font-family: 'IceAge';
+    src: url('./ICE_AGE.ttf') format('woff'),
+        url('./ICE_AGE.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 300vh;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.container {
+    background: url("imgs/background2.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    margin-bottom: 130px;
+}
+
+.container2 {
+    /* background-image: linear-gradient(180deg, rgb(91, 50, 196), lightblue) ; */
+    background: url(./imgs/ok.png);
+    background-size: cover;
+    min-height: 100vh;
+    margin-bottom: 5px;
+}
+
+.container3 {
+    background-color: rgb(216, 216, 244);
+    min-height: 30vh;
+    margin-top: -10px;
+}
+.container4 {
+    min-height: 70vh;
+    margin-bottom: 5px;
+}
+.container5 {
+    background-color: rgb(117, 117, 243);
+    min-height: 30vh;
+    margin-top: -10px;
+}
+
+.pengu {
+    top: 25%;
+    left: 38%;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding: 10px;
+}
+.pengu1 {
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding: 10px;
+}
+.pengu2 {
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding: 10px;
+}
+.pengu3 {
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding: 10px;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+nav {
+    list-style-type: none;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(133, 156, 230);
+}
+
+.peng {
+    color: white;
+    font-size: 69px;
+    float: left;
+    padding: 0 30px;
+    font-family: 'IceAge', sans-serif;
+}
+
+.orca {
+    width: 900px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.navbar {
+    width: 150px;
+    float: right;
+}
+
+.navbar:hover {
+    background-color: rgba(255, 255, 255, 0.485);
+}
+
+li.dropdown {
+    float: right;
+    display: inline-block;
+}
+
+.dropdown-content {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content .navBtn, .navBtn2, .navBtn3 {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 160px;
+}
+
+.dropdown-content .navBtn:hover, .navBtn2:hover, .navBtn3:hover {background-color: rgb(133, 156, 230);}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'IceAge', sans-serif;
+}
+
+h2 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Epilogue', sans-serif;
+}
+
+h4 {
+    color: white;
+    margin-top: 15px;
+    line-height: 30px;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.btn, .btn2 {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    width: 158px;
+    height: 47px;
+    background-color: rgb(133, 156, 230);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition: transform 200ms, box-shadow 200ms;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #094c66 0px 0px 0px;
+}
+
+.btn:hover {
+    background-color: rgb(99, 128, 222);
+}
+
+.btn2:active {
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #094c66 0px 0px 0px;
+}
+
+.btn2:hover {
+    background-color: rgb(99, 128, 222);
+}
+
+.navBtn, .navBtn2, .navBtn3 {
+    border: none;
+}
+
+.love {
+    color: rgb(133, 156, 230);
+    font-size: 60px;
+    position: relative;
+    bottom: 60px;
+}
+
+.twt {
+    border-radius: 50%; /* this makes the images circular */
+    width: 110px; /* adjust as needed */
+    height: 110px; /* adjust as needed */
+    object-fit: cover; /* this makes the images scale to fit their containers while maintaining aspect ratio */
+}
+
+.tg {
+    border-radius: 50%; /* this makes the images circular */
+    width: 110px; /* adjust as needed */
+    height: 110px; /* adjust as needed */
+    object-fit: cover; /* this makes the images scale to fit their containers while maintaining aspect ratio */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(218, 226, 255);
+}
+
+@media only screen and (max-width:500px) {
+    .container,.container2,.container3,.container4,.container5,.pengu,.pengu1,.pengu2,.pengu3
+    {
+    width: 100%;
+    }
+
+    .pengu {
+        left: 0;
+    }
+}
+
